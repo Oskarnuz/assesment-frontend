@@ -1,0 +1,50 @@
+.card {
+  border: solid rgb(58, 14, 4) 2px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  padding: 1.5em;
+  width: 350px;
+  }
+
+.card__product {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  }
+
+.card__img {
+  width: 120px;
+  height: 120px;
+  border: solid 1px darkgrey;
+}
+
+.card__timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.card__button {
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(135, 190, 245);
+  font-weight: 600;
+  padding: 1em;
+}
+
+.card__button:hover {
+  background-color: rgb(100, 150, 200);
+  cursor: pointer;
+}
+
+.card__button--disabled {
+  background-color: white;
+  color: red;
+  border: solid red 2px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 1em;
+  }

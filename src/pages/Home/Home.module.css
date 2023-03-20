@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(223, 217, 217);
+}
+
+.home__title {
+  padding: 20px;
+}
+
+.home__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
