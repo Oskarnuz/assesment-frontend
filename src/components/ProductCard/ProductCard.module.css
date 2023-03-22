@@ -16,7 +16,7 @@
 .card__img {
   width: 120px;
   height: 120px;
-  border: solid 1px darkgrey;
+  mix-blend-mode: multiply;
 }
 
 .card__timer {

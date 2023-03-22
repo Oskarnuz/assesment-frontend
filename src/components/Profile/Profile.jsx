@@ -15,14 +15,14 @@ const Profile = () => {
           </div>
           <div className={styles.profile__info}>      
             <div className={styles.profile__description}>
-              <p>Tecnologo en Electronica Industrial, especialista en Sistemas de Gestion de Calidad y Metrología. Actualmente estudiante del programa Top de <span>Make it Real</span> "Full Stack Web Developer". Comprometido con mi crecimiento personal y desarrollo profesional.</p>
+              <p>Technologist in Industrial Electronics, specialist in Quality Management Systems and Metrology. Currently a student of the Make it Real Top Program "Full Stack Web Developer". Committed to my personal growth and professional development.</p>
             </div>
             <div className={styles.profile__list}>
-              <h1>Aprendido en el Programa:</h1>
+              <h1>Learned in the Program:</h1>
               <ul>
-                <li>He profundizado mi conocimiento en herramientas y conceptos de HTML, CSS, Javascript y React.</li>
-                <li>Gracias a las clases de habilidades blandas, entiendo las condiciones de esta profesion, aplico y fortalezco en mi dichas habilidades.</li>
-                <li>Desarrollo retos, misiones y proyectos con mas fluidez, organización y pensamiento lógico.</li>
+                <li>I have deepened my knowledge in tools and concepts of HTML, CSS, Javascript and React.</li>
+                <li>Thanks to the soft skills classes, I understand the conditions of this profession, I apply and strengthen these skills in myself.</li>
+                <li>I develop challenges, missions and projects with more fluidity, organization and logical thinking.</li>
               </ul>
             </div>
             <div className={styles.profile__contact}>

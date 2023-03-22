@@ -2,41 +2,30 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "../ProductCard/ProductCard.module.css";
 
-const ProductCard = ({ image, title, id }) => {
-  const [timeLeft, setTimeLeft] = useState({
+const ProductCard = ({ id, title, image }) => {
+  const [countdown, setCountdown] = useState({
     minutes: Math.floor(Math.random() * 5),
     seconds: Math.floor(Math.random() * 59),
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        if (prevTime.seconds === 0 && prevTime.minutes === 0) {
-          clearInterval(interval);
-          
-          return prevTime;
-        } else if (prevTime.seconds === 0) {
-          
-          return {
-            minutes: prevTime.minutes - 1,
-            seconds: 59,
-          };
-        } else {
+      setCountdown((prevCountdown) => {
+        const seconds = prevCountdown.seconds - 1;
+        const minutes = prevCountdown.minutes - (seconds < 0 ? 1 : 0);
 
-          return {
-            ...prevTime,
-            seconds: prevTime.seconds - 1,
-          };
-        }
+        return {
+          minutes: minutes < 0 ? 0 : minutes,
+          seconds: seconds < 0 ? 0 : seconds,
+        };
       });
     }, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const { minutes, seconds } = timeLeft;
-  const min = `0${minutes}`.slice(-2);
-  const sec = `0${seconds}`.slice(-2);
+  const { minutes, seconds } = countdown;
+  const isExpired = minutes === 0 && seconds === 0;
 
   return (
     <section className={styles.card}>
@@ -46,10 +35,12 @@ const ProductCard = ({ image, title, id }) => {
       </div>
       <div className={styles.card__timer}>
         <p>
-          {min}:{sec}
+          {`${minutes.toString().padStart(2, "0")}:${seconds
+            .toString()
+            .padStart(2, "0")}`}
         </p>
         <Link to={`/product-detail/${id}`}>
-          {seconds === 0 && minutes === 0 ? (
+          {isExpired ? (
             <button
               className={`${styles["card__button--disabled"]} ${styles["card__button"]}`}
               type="submit"
@@ -69,3 +60,4 @@ const ProductCard = ({ image, title, id }) => {
 };
 
 export default ProductCard;
+
