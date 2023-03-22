@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
+  Las ceremonias más importantes de un Sprint son:
+Sprint Planning: En esta reunión, el equipo de desarrollo decide qué elementos del Product Backlog se incluirán en el próximo Sprint y cómo se abordarán.
+Daily Scrum: Esta es una reunión diaria corta en la que el equipo revisa el progreso del trabajo y planea el trabajo del día.
+Sprint Review: Al final del Sprint, el equipo de desarrollo presenta su trabajo al dueño del producto y a los stakeholders.
+Sprint Retrospective: Esta reunión tiene como objetivo identificar qué salió bien y qué se puede mejorar en el próximo Sprint.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar
+  Los wireframes son representaciones visuales básicas de una página web o aplicación móvil. Se utilizan para planificar y visualizar la estructura y el diseño de la interfaz de usuario. Algunas herramientas populares para crear wireframes son Figma, Sketch y Adobe XD.
 
-## Available Scripts
+# Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
+  var, let y const son palabras clave utilizadas en JavaScript para declarar variables. La diferencia principal es cómo manejan el alcance de la variable y si se permite o no la reasignación de valores.
 
-In the project directory, you can run:
+var tiene alcance de función y permite la reasignación de valores.
+let tiene alcance de bloque y también permite la reasignación de valores.
+const tiene alcance de bloque y no permite la reasignación de valores.
 
-### `npm start`
+ # ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
+  Los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1 son:
+git branch rama-1
+git checkout -b rama-1
+git switch -c rama-1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Explicar la diferencia entre git merge y git rebase
+  La diferencia entre git merge y git rebase es que:
+git merge fusiona una rama en otra y crea un nuevo commit de fusión que combina el historial de ambas ramas.
+git rebase toma los cambios de una rama y los aplica sobre otra rama, lo que resulta en un historial lineal y más limpio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
+  Git pull es un comando que se utiliza para actualizar una rama local con los cambios de una rama remota. En cambio, un Pull Request (PR) es una solicitud que un colaborador del repositorio envía al propietario del repositorio para incluir sus cambios en la rama principal del repositorio.
 
-### `npm test`
+# ¿Qué es el Virtual DOM?
+  El Virtual DOM es una representación virtual en memoria del DOM (Document Object Model) de una página web. Permite a las bibliotecas y frameworks de JavaScript como React, actualizar la interfaz de usuario de manera eficiente al minimizar las actualizaciones del DOM real.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# CodePem
+  [Codepen](https://codepen.io/Oskarnuz/pen/RwYqWdN)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
