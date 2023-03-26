@@ -1,3 +1,70 @@
+# Assesment Frontend
+
+# PARTE 1
+
+Esta es una solución al proyecto **Assesment Frontend** del curso Make It Real.
+
+## Tabla de contenido
+
+- [Assesment Frontend](#Assesment Frontend)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Resumen](#resumen)
+    - [El reto](#el-reto)
+    - [Captura de pantalla](#captura-de-pantalla)
+    - [Construido con](#construido-con)
+    - [Lo que aprendí](#lo-que-aprendí)
+    - [Desarrollo continuo](#desarrollo-continuo)
+  - [Autor](#autor)
+
+## Resumen
+
+El objetivo de esta misión es poner en práctica lo que has aprendido en el programa. Los temas que se cubrirán son: Scrum, Git, HTML y CSS, JavaScript y React.
+
+La misión consta de dos partes: primero deberás construir un proyecto en React y después deberás responder una serie de preguntas. En el reporte de la misión deberás agregar el link al repositorio del proyecto y las respuestas a las preguntas.
+
+### El reto
+
+Construir una aplicación web la cual consta de tres páginas:
+
+Home
+Product Detail
+About
+La aplicación debe tener un menú que le permita al usuario navegar entre estas páginas.
+
+Requerimientos
+Usar Flexbox CSS.
+El proyecto debe tener configurado ESLint y que tus archivos no tengan problemas con estos.
+El código del proyecto debe estar en un repositorio público de tu autoría.
+Bonus: Implementar tu CSS con BEM o módulos de CSS.
+
+### Captura de pantalla
+
+![](./src/assets/screenshot1.jpg)
+![](./src/assets/screenshot2.jpg)
+
+### Construido con
+
+- React
+- Axios
+- Redux
+- Lenguaje JSX
+- CSS Module 
+
+### Lo que aprendí
+
+- Manejo de React
+
+### Desarrollo continuo
+
+Profundizar en React, axios y redux
+
+## Autor
+
+- Oscar Nuñez
+
+ # PARTE 2
+
+
 # ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
   Las ceremonias más importantes de un Sprint son:
 Sprint Planning: En esta reunión, el equipo de desarrollo decide qué elementos del Product Backlog se incluirán en el próximo Sprint y cómo se abordarán.
