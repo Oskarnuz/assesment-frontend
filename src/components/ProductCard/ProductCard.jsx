@@ -11,8 +11,13 @@ const ProductCard = ({ id, title, image }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCountdown((prevCountdown) => {
-        const seconds = prevCountdown.seconds - 1;
-        const minutes = prevCountdown.minutes - (seconds < 0 ? 1 : 0);
+        let seconds = prevCountdown.seconds - 1;
+        let minutes = prevCountdown.minutes;
+
+        if (seconds < 0 && minutes !== 0) {
+          seconds = 59;
+          minutes -= 1;
+        }
 
         return {
           minutes: minutes < 0 ? 0 : minutes,
